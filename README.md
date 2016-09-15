@@ -4,6 +4,7 @@ JSPutty is a way to manipulate and transform your data in a way that is readable
 
 ## Instructions
 
+```javascript
 var putty = require('putty');
 
 var originalString = "Hi";
@@ -17,6 +18,7 @@ var getStringLength = funtion(string){
 }
 
 console.log(putty.pipe(originalString, addPeriodToString, getStringLength)); // 3
+```
 
 ## Some things to note
 
