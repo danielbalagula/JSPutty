@@ -13,7 +13,7 @@ var addPeriodToString = function(string){
 	return string + ".";
 }
 
-var getStringLength = funtion(string){
+var getStringLength = function(string){
 	return string.length;
 }
 
