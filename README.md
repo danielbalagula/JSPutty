@@ -24,5 +24,7 @@ console.log(putty.pipe(originalString, addPeriodToString, getStringLength)); // 
 
 JSPutty checks that everything returned from each function equals the number of arguments expected by the next function. If there is a difference in these numbers, you will get an error.
 
+JSPutty does not currently have explicit support for promises. This will be added.
+
 I accept all help and contributions to the package. If you've found a bug, please submit it. Even better, see if you can fix it!
 
