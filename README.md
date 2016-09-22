@@ -2,10 +2,18 @@
 
 JSPutty is a way to manipulate and transform your data in a way that is readable, stylish, and familiar.
 
-## Instructions
+## Installation
 
 ```javascript
-var putty = require('putty');
+
+npm install jsputty
+
+```
+
+## Usage
+
+```javascript
+var pipe = require('putty').pipe();
 
 var originalString = "Hi";
 
@@ -17,7 +25,7 @@ var getStringLength = function(string){
 	return string.length;
 }
 
-console.log(putty.pipe(originalString, addPeriodToString, getStringLength)); // 3
+console.log(pipe(originalString, addPeriodToString, getStringLength)); // 3
 ```
 
 ## Some things to note
