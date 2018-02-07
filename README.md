@@ -28,6 +28,30 @@ var getStringLength = function(string){
 console.log(pipe(originalString, addPeriodToString, getStringLength)); // 3
 ```
 
+You can also use functions that use multiple arguments:
+
+```javascript
+var putty = require('jsputty')
+
+var string  = "hi"
+
+var num = 3
+
+function multiplyString(string,num){
+  var result = ""
+  for (var i=0; i<num; i++){
+    result += string
+  }
+  return result;
+}
+
+function getLength(string){
+  return string.length
+}
+
+console.log(putty.pipe([string,num],multiplyString,getLength))//6
+```
+
 ## Some things to note
 
 JSPutty checks that everything returned from each function equals the number of arguments expected by the next function. If there is a difference in these numbers, you will get an error.
